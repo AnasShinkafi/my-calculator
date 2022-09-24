@@ -3,10 +3,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
 }
+
 body {
     padding: 0;
     margin: 0;
 }
+
 .heading {
     position: relative;
     top: 40px;
@@ -14,15 +16,8 @@ body {
     font-weight: 600;
     left: 10px;
 }
-#gray-button {
-    background-color: rgb(53, 47, 47);
-}
-#orange-button {
-    background-color: orange;
-}
-#green-button {
-    background-color: green;
-}
+
+
 .calculator-grid {
     padding-bottom: 50px;
     display: grid;
@@ -32,6 +27,7 @@ body {
     grid-template-columns: repeat(4,60px);
     grid-template-rows: minmax(120px,auto) repeat(6,60px);
 }
+
 .calculator-grid > button {
     cursor: pointer;
     font-size: 20px;
@@ -39,10 +35,28 @@ body {
     color: white;
     background-color: rgb(100, 92, 92);
 }
+
+.calculator-grid > .gray-button{
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid rgb(41, 35, 35) ;
+    color: white;
+    background-color: rgb(53, 47, 47);
+}
+
+.calculator-grid > .orange-button{
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid rgb(41, 35, 35) ;
+    color: white;
+    background-color: orange;
+}
+
 .span-two {
     grid-column: span 2;
     border-bottom-left-radius: 15px;
 }
+
 .screen {
     grid-column: 1/ -1;
     background-color: #101314;
@@ -56,11 +70,14 @@ body {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .circles {
     display: flex;
     
 }
+
 .circle1 {
+    display: flex;
     position: relative;
     width: 15px;
     height: 15px;
@@ -71,6 +88,33 @@ body {
     right: 170px;
     border-style: none;
 }
+
+.circle-green {
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 6px;
+    top: 57px;
+    right: 170px;
+    border-style: none;
+}
+
+.circle-orange {
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-left: 6px;
+    top: 57px;
+    right: 170px;
+    border-style: none;
+}
+
 .display {
     color: white;
     font-size: 2.5rem;
